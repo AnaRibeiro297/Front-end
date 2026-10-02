@@ -1,6 +1,6 @@
-import Header from "./components/Header";
-import CardPrato from "./components/CardPrato";
-import Rodape from "./components/Rodape";
+import Header from "./Header"; //Desafio e colocado no app.jsx
+import CardPrato from "./CardPrato";
+import Rodape from "./Rodape";
 
 export default function App() {
   const cardapio = [
@@ -18,7 +18,6 @@ export default function App() {
       preco: 45.00,
       descricao: "Molho de tomate artesanal, muçarela de búfala e manjericão fresco."
     },
-    // NÍVEL 1: +2 pratos adicionados
     {
       id: 3,
       nome: "Pudim de Leite",
@@ -40,7 +39,6 @@ export default function App() {
       <Header />
       
       <main className="conteudo">
-        {/* DESAFIO: Exibição da quantidade total de itens */}
         <h2>Nosso Cardápio</h2>
         <p className="total-itens">Cardápio com {cardapio.length} itens</p>
 
